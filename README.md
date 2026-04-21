@@ -250,6 +250,14 @@ These mechanics form the backend logic that will later be connected to the graph
 
 &#x20;   java TypingRaceTest
 
+(for openning a window displaying the typing race simulation and the final race results.)
+
+
+
+	java TypingRaceTest 
+(for textual output on cmd)
+
+
 
 
 ===================================================

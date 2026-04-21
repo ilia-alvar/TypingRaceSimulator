@@ -661,7 +661,6 @@ public class TypingRace
      */
     private void printRace()
     {
-        System.out.print('\u000C');
 
         System.out.println("TYPING RACE");
         System.out.println("Passage: " + passageText);
