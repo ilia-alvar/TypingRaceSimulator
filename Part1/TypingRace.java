@@ -244,7 +244,7 @@ public class TypingRace
     {
         System.out.print('\u000C'); // Clear terminal
 
-        System.out.println("  TYPING RACE — passage length: " + passageLength + " chars");
+        System.out.println("  TYPING RACE - passage length: " + passageLength + " chars");
         multiplePrint('=', passageLength + 3);
         System.out.println();
 
