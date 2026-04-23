@@ -56,7 +56,11 @@ public class TypingRaceGUI {
         outputArea.setText(baos.toString());
     }
 
+    public static void startRaceGUI() {
+        SwingUtilities.invokeLater(() -> new TypingRaceGUI());
+    }
+
     public static void main(String[] args) {
-        new TypingRaceGUI();
+        startRaceGUI();
     }
 }

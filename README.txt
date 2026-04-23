@@ -32,7 +32,7 @@ The simulator models typing behavior including accuracy, burnout, typing styles,
 
 ###### **Project Structure**
 
-TypingRaceSimulator1/
+TypingRaceSimulator/
 
 │
 
@@ -63,6 +63,9 @@ TypingRaceSimulator1/
 
 └── README.md            # Project documentation
 
+└── README.txt           # Project documentation
+
+└── .gitignore          # The .gitignore automatically ignores .class files in every folder.
 
 
 
@@ -134,7 +137,7 @@ Part 1 implements the core race simulation in the terminal.
 
 
 
-&#x20;    cd TypingRaceSimulator1
+&#x20;    cd TypingRaceSimulator
 
 &#x20;    cd Part1
 
@@ -233,7 +236,7 @@ These mechanics form the backend logic that will later be connected to the graph
 
 
 
-&#x20;     cd TypingRaceSimulator1
+&#x20;     cd TypingRaceSimulator
 
 &#x20;     cd Part2
 
@@ -253,6 +256,7 @@ These mechanics form the backend logic that will later be connected to the graph
 
 &#x20;   java TypingRaceGUI 
 (for openning a window displaying the typing race simulation and the final race results.)
+The GUI is launched using the startRaceGUI() method in TypingRaceGUI.java.
 
 or
 
