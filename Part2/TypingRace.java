@@ -793,6 +793,54 @@ public class TypingRace
         return String.format("%.2f", value);
     }
 
+    public void prepareRaceForGUI()
+    {
+        if (typists.size() < MIN_TYPISTS)
+        {
+            throw new IllegalStateException("At least " + MIN_TYPISTS + " typists are required.");
+        }
+
+        prepareAllTypistsForRace();
+        finishingOrder.clear();
+        turnCount = 0;
+        raceFinished = false;
+    }
+
+    public void runOneTurnForGUI()
+    {
+        if (raceFinished)
+        {
+            return;
+        }
+
+        turnCount = turnCount + 1;
+
+        int i = 0;
+        while (i < typists.size())
+        {
+            Typist currentTypist = typists.get(i);
+
+            if (!hasFinished(currentTypist))
+            {
+                advanceTypist(currentTypist);
+
+                if (hasFinished(currentTypist) && !finishingOrder.contains(currentTypist))
+                {
+                    finishingOrder.add(currentTypist);
+                }
+            }
+
+            i = i + 1;
+        }
+
+        if (finishingOrder.size() == typists.size())
+        {
+            raceFinished = true;
+            finalizeRaceResults();
+        }
+    }
+
+
     // ----------------------------
     // Getters / setters
     // ----------------------------

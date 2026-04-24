@@ -221,6 +221,20 @@ New features include:
 These mechanics form the backend logic that will later be connected to the graphical interface.
 
 
+=========================================================
+
+### GUI Features
+
+The GUI demonstrates the simulation visually, including:
+
+- Real-time typing progress  
+- Highlighted completed and remaining text  
+- Typist-specific colors and progress bars  
+- Final race statistics display  
+
+Note: Typists and settings are currently predefined in code, while the backend fully supports dynamic customization.
+
+
 
 =====================================================
 
