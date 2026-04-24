@@ -67,6 +67,7 @@ TypingRaceSimulator/
 
 └── .gitignore          # The .gitignore automatically ignores .class files in every folder.
 
+└── .git/ 
 
 
 

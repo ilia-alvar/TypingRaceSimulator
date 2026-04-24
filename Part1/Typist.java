@@ -1,5 +1,15 @@
 /**
- * Write a description of class Typist here.
+ * 
+ * Represents a single competitor in the typing race simulation.
+ * 
+ * A Typist models the behaviour of a racer, including their typing accuracy,
+ * progress through the passage, and burnout state. The class provides methods
+ * to simulate typing actions such as advancing forward, mistyping (sliding back),
+ * and handling burnout and recovery over multiple turns.
+ * 
+ * It also ensures that key constraints are enforced, such as keeping progress
+ * non-negative and accuracy values within the range [0.0, 1.0].
+ *
  *
  * Starter code generously abandoned by Ty Posaurus, your predecessor,
  * who typed with two fingers and considered that "good enough".

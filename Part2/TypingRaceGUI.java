@@ -34,7 +34,7 @@ public class TypingRaceGUI {
         race.setAutocorrectOn(true);
         race.setCaffeineModeOn(true);
 
-        Typist t1 = new Typist("🫖", "Flint Luckwood", 0.85);
+        Typist t1 = new Typist("⏰", "Flint Luckwood", 0.85);
         Typist t2 = new Typist("🌷", "Micheal Wazawski", 0.75);
         Typist t3 = new Typist("🍧", "Ilia Grozer", 0.90);
 
