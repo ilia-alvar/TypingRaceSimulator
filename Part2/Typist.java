@@ -1,12 +1,33 @@
 import java.util.ArrayList;
 
 /**
- * Represents a single competitor in the typing race.
- * Extended for Part II.
+ * Represents a single competitor in the Part II typing race simulation.
  *
- * @author Ilia
+ * This extended Typist class stores both the current race state and long-term
+ * performance data for a typist. It supports advanced customisation options,
+ * including typing style, keyboard type, visual colour, accessories, sponsor
+ * deals, and upgrade choices.
+ *
+ * The class also tracks race statistics such as WPM, accuracy percentage,
+ * burnout count, finishing position, points, earnings, personal bests, badges,
+ * and historical performance data.
+ *
+ * Customisation choices directly affect race behaviour. For example, typing
+ * style and keyboard type influence accuracy, speed, and burnout risk, while
+ * accessories such as wrist support, energy drink, and noise-cancelling
+ * headphones modify burnout duration, accuracy changes, or mistype chance.
+ *
+ * Encapsulation is used to protect the typist's internal state. Values such as
+ * accuracy are clamped to valid ranges, and race statistics are updated through
+ * controlled methods rather than direct field access.
+ *
+ * This class is part of Part II of the TypingRaceSimulator project and is used
+ * by both the TypingRace engine and TypingRaceGUI interface.
+ *
+ * @author Ilia Hajypour Alvar
  * @version May 2026
  */
+
 public class Typist
 {
     private String name;

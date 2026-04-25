@@ -44,7 +44,9 @@ TypingRaceSimulator/
 
 │   ├── Typist.java
 
-│   └── TypingRaceTest.java
+│   ├── TypingRaceTest.java
+
+|   ├── TypistTest.java
 
 │
 
@@ -52,20 +54,19 @@ TypingRaceSimulator/
 
 │   ├── TypingRace.java
 
-│   └── Typist.java
+│   ├── Typist.java
 
-|   └── TypingRaceTest.java
+|   ├── TypingRaceTest.java
 
-|   └── TypingRaceGUI.java
-
+|   ├── TypingRaceGUI.java
 
 │
 
-└── README.md            # Project documentation
+├── README.md            # Project documentation
 
-└── README.txt           # Project documentation
+├── README.txt           # Project documentation
 
-└── .gitignore          # The .gitignore automatically ignores .class files in every folder.
+├── .gitignore          # The .gitignore automatically ignores .class files in every folder.
 
 
 =====================================================================
@@ -221,7 +222,60 @@ New features include:
 These mechanics form the backend logic that will later be connected to the graphical interface.
 
 
-=========================================================
+============================================================
+###### **Interactive Configuration (GUI Enhancements)**
+
+
+###### Race Setup Options
+
+Users can configure the race before starting:
+
+. Passage Selection
+		. Predefined passages (Short, Medium, Long)
+		. Custom user-defined passage
+Seat Count
+		. Adjustable number of typists (2–6)
+Difficulty Modifiers
+		. Autocorrect
+		. Caffeine Mode
+		. Night Shift
+
+###### Typist Customization
+
+Each typist can be individually configured through the interface:
+
+. Identity
+		. Name
+		. Symbol
+. Performance Attributes
+		. Base accuracy (0.0 – 1.0)
+. Visual Customization
+		. Color (custom RGB-based themes)
+. Typing Behavior
+		. Typing style (e.g. Touch Typist, Hunt & Peck)
+		. Keyboard type (e.g. Mechanical, Touchscreen)
+. Accessories
+		. Wrist Support (reduces burnout duration)
+		. Energy Drink (boost early performance, later penalty)
+		. Noise-Cancelling Headphones (reduces mistype chance)
+. Sponsor Selection
+		. Enables sponsor-based bonus rewards
+
+
+
+###### Behavior Impact
+
+All configuration choices directly influence race performance:
+
+. Accuracy affects typing success rate
+. Typing style and keyboard type modify:
+		. speed
+		. accuracy
+		. burnout risk
+. Accessories introduce trade-offs between stability and performance
+. Modifiers dynamically change behavior during the race
+
+
 
 ### GUI Features
 
@@ -236,7 +290,7 @@ Note: Typists and settings are currently predefined in code, while the backend f
 
 
 
-=====================================================
+========================================================
 
 
 

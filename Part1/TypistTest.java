@@ -1,4 +1,4 @@
-// Test class for Typist
+// Test class for Typist Ilia Hajypour 
 
 public class TypistTest
 {
