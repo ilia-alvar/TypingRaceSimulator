@@ -4,13 +4,57 @@ import java.util.Comparator;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Typing race engine for Part II.
- * Supports 2-6 typists, passage text, modifiers, statistics,
- * history, leaderboard points, sponsors, prize money, and comparison logic.
+ * TypingRace (Part II)
  *
- * @author Ilia
+ * This class represents the core race engine for the extended typing race simulation.
+ * It manages the full lifecycle of a race, including typist progression, turn-based
+ * updates, performance modifiers, statistics tracking, and reward calculation.
+ *
+ * Key Features:
+ * - Supports 2–6 typists in a single race
+ * - Uses a configurable passage of text as the race track
+ * - Turn-based simulation with dynamic behaviour per typist
+ *
+ * Race Mechanics:
+ * - Typists advance through the passage based on their accuracy
+ * - Mistypes cause slide-back penalties (modified by autocorrect and accessories)
+ * - Burnout temporarily disables typing and is influenced by typing style and equipment
+ * - Multiple typing attempts per turn are possible depending on speed modifiers
+ *
+ * Difficulty Modifiers:
+ * - Autocorrect: reduces slide-back penalty after mistakes
+ * - Caffeine Mode: increases early speed but reduces accuracy and increases burnout risk later
+ * - Night Shift: lowers initial accuracy for all typists, increasing overall difficulty
+ *
+ * Statistics & Analytics:
+ * - Tracks WPM, accuracy percentage, burnout count, and finishing position
+ * - Maintains per-race and cumulative statistics (history, personal bests, leaderboards)
+ * - Provides comparison utilities across multiple performance metrics
+ *
+ * Reward System:
+ * - Leaderboard points awarded based on finishing position and performance
+ * - Earnings calculated using placement, WPM bonuses, burnout penalties, and sponsor bonuses
+ * - Sponsor system provides additional rewards based on specific conditions (e.g., high accuracy, no burnouts)
+ *
+ * GUI Integration:
+ * - Designed to work with TypingRaceGUI for real-time visual simulation
+ * - Provides helper methods such as:
+ *     - prepareRaceForGUI()
+ *     - runOneTurnForGUI()
+ *     - getCompletedTextFor()
+ *     - getRemainingTextFor()
+ *
+ * Design Notes:
+ * - Encapsulation is used to manage race state and typist interactions safely
+ * - Behaviour is modular, allowing easy extension of modifiers and customisation features
+ * - The engine is reusable for both terminal-based and graphical simulations
+ *
+ * @author Ilia Hajypour Alvar
  * @version May 2026
  */
+
+
+
 public class TypingRace
 {
     private String passageText;
