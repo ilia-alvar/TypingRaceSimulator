@@ -257,10 +257,31 @@ Each typist can be individually configured through the interface:
 * Accessories
 		Wrist Support (reduces burnout duration)
 		Energy Drink (boost early performance, later penalty)
-		Noise-Cancelling Headphones (reduces mistype chance)
+		Noize-Cancelling Headphones (reduces mistype chance)
 * Sponsor Selection
 		Enables sponsor-based bonus rewards
 
+
+### Accessories
+* Wrist Support
+        Reduces the duration of burnout, allowing typists to recover faster and maintain more consistent performance.
+* Energy Drink
+        Provides an early-race accuracy boost, but decreases accuracy later in the race, introducing a risk–reward trade-off.
+* Noize-Cancelling Headphones
+        Reduces the probability of mistypes by simulating a distraction-free typing environment.
+
+
+### Sponsor System
+
+* Sponsor Attribute
+        Each typist can be assigned a sponsor, which provides bonus rewards based on performance conditions at the end of the race.
+
+Examples:
+
+* KeyCorp → Bonus if no burnouts occur
+* SwiftKeys → Bonus for high typing speed (WPM)
+* ZenType → Bonus for high accuracy
+* LastStand Tech → Bonus for last-place finish (underdog reward)
 
 
 ### Behavior Impact

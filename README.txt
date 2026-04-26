@@ -263,6 +263,7 @@ Each typist can be individually configured through the interface:
 
 
 
+
 ###### Behavior Impact
 
 All configuration choices directly influence race performance:
@@ -274,6 +275,35 @@ All configuration choices directly influence race performance:
 		. burnout risk
 . Accessories introduce trade-offs between stability and performance
 . Modifiers dynamically change behavior during the race
+
+
+
+
+### Accessories
+* Wrist Support
+        Reduces the duration of burnout, allowing typists to recover faster and maintain more consistent performance.
+* Energy Drink
+        Provides an early-race accuracy boost, but decreases accuracy later in the race, introducing a risk–reward trade-off.
+* Noize-Cancelling Headphones
+        Reduces the probability of mistypes by simulating a distraction-free typing environment.
+
+
+
+
+
+### Sponsor System
+
+* Sponsor Attribute
+        Each typist can be assigned a sponsor, which provides bonus rewards based on performance conditions at the end of the race.
+
+Examples:
+
+* KeyCorp → Bonus if no burnouts occur
+* SwiftKeys → Bonus for high typing speed (WPM)
+* ZenType → Bonus for high accuracy
+* LastStand Tech → Bonus for last-place finish (underdog reward)
+
+
 
 
 
