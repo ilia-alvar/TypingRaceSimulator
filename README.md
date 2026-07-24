@@ -453,7 +453,7 @@ This functionality will be implemented in the gui-development branch.
 
 
 
-Ilia Hajypour Alvar
+Ilia Hajypour 
 
 TypingRaceSimulator Project – 2026 - May
 
