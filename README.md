@@ -32,13 +32,14 @@ The simulator models typing behavior including accuracy, burnout, typing styles,
 
 The graphical interface displays the race in real time, showing each typist’s progress, completed text, burnout status, and final performance statistics.
 
-![Three-typist typing race](assets/demo1.gif)
+![Basic typing race demonstration](assets/demo1.gif)
 
 
 
 ### Interactive Configuration
 
 This demonstration shows how race settings and individual typist attributes can be configured through the graphical interface.
+
 
 ![Interactive race configuration](assets/demo2.gif)
 
@@ -48,6 +49,7 @@ This demonstration shows how race settings and individual typist attributes can 
 ### Six-Typist Race
 
 The simulator supports between two and six competitors. This demonstration shows a full race with six typists.
+
 
 ![Six-typist typing race](assets/demo3.gif)
 
