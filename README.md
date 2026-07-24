@@ -62,40 +62,27 @@ The simulator supports between two and six competitors. This demonstration shows
 ###### **Project Structure**
 
 TypingRaceSimulator/
-
 │
-
-├── .git/                # Git repository (hidden)
-
-├── Part1/               # Textual version of the typing race
-
+├── Part1/                         # Terminal-based typing race
 │   ├── TypingRace.java
-
 │   ├── Typist.java
-
 │   ├── TypingRaceTest.java
-
-|   ├── TypistTest.java
-
+│   └── TypistTest.java
 │
-
-├── Part2/               # Extended version (prepared for GUI development)
-
+├── Part2/                         # Extended graphical typing race
 │   ├── TypingRace.java
-
-│   ├── Typist.java 
-
-|   ├── TypingRaceTest.java
-
-|	├── TypingRaceGUI.java
-
+│   ├── Typist.java
+│   ├── TypingRaceTest.java
+│   └── TypingRaceGUI.java
 │
-
-├── README.md            # Project documentation
-
-├── README.txt           # Project documentation
-
-├── .gitignore          # The .gitignore automatically ignores .class files in every folder.
+├── assets/                        # Images and GIF demonstrations
+│   ├── demo1.gif
+│   ├── demo2.gif
+│   └── demo3.gif
+│
+├── README.md                      # Main GitHub documentation
+├── README.txt                     # Additional project documentation
+└── .gitignore                     # Ignores generated .class files
 
 
 
