@@ -61,6 +61,9 @@ The simulator supports between two and six competitors. This demonstration shows
 
 ###### **Project Structure**
 
+## Project Structure
+
+```text
 TypingRaceSimulator/
 │
 ├── Part1/                         # Terminal-based typing race
@@ -83,7 +86,7 @@ TypingRaceSimulator/
 ├── README.md                      # Main GitHub documentation
 ├── README.txt                     # Additional project documentation
 └── .gitignore                     # Ignores generated .class files
-
+```
 
 
 =====================================================================
